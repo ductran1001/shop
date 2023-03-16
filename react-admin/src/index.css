@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+input[type='number'],
+input[type='date'] {
+    @apply text-sm sm:text-base placeholder-gray-400 pr-4 rounded-md border border-gray-400 w-full py-2 focus:outline-none placeholder:italic placeholder:text-base;
+}
+
+input[type='color'] {
+    @apply text-sm sm:text-base placeholder-gray-400 h-10 rounded-md border border-gray-400 w-full  focus:outline-none placeholder:italic placeholder:text-base;
+}
+textarea {
+    @apply text-sm sm:text-base placeholder-gray-400 pr-4 rounded-md border border-gray-400 w-full py-2 focus:outline-none placeholder:italic placeholder:text-base;
+}
+button:disabled,
+button[disabled] {
+    @apply cursor-not-allowed;
+}
+.pagination {
+    @apply flex justify-end items-end;
+}
+.page-link {
+    @apply relative sm:px-4 px-[8px] cursor-pointer inline-flex items-center border border-gray-300 bg-white py-2 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20;
+}
+.selected > .page-link {
+    @apply relative z-10 inline-flex items-center border border-indigo-500 bg-indigo-50 text-sm font-medium text-indigo-600 focus:z-20;
+}
+.disabled {
+    @apply bg-gray-100 cursor-not-allowed;
+}
+.disabled > .page-link {
+    @apply bg-gray-100 cursor-not-allowed;
+}
+
+.overlay {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #222;
+}
+
+.overlay__inner {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.overlay__content {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinner {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.05);
+    border-top-color: #fff;
+    animation: spin 1s infinite linear;
+    border-radius: 100%;
+    border-style: solid;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

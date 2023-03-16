@@ -1,0 +1,48 @@
+{
+  "name": "next-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 8000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "false2.9.11",
+    "@next/font": "13.1.6",
+    "@reduxjs/toolkit": "false1.9.3",
+    "@types/axios": "false0.14.0",
+    "@types/node": "18.13.0",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "add": "false2.0.6",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6",
+    "install": "false0.13.0",
+    "next": "13.1.6",
+    "next-auth": "false4.20.1",
+    "numeral": "false2.0.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "false7.43.2",
+    "react-hot-toast": "false2.4.0",
+    "react-icons": "false4.7.1",
+    "react-redux": "false8.0.5",
+    "react-slick": "false0.29.0",
+    "react-slideshow-image": "false4.2.1",
+    "swiper": "false9.0.5",
+    "typescript": "4.9.5",
+    "yarn": "false1.22.19",
+    "yup": "false1.0.2",
+    "zustand": "false4.3.3"
+  },
+  "devDependencies": {
+    "@types/numeral": "false2.0.2",
+    "@types/react-redux": "false7.1.25",
+    "@types/react-slick": "false0.23.10",
+    "autoprefixer": "false10.4.13",
+    "postcss": "false8.4.21",
+    "tailwindcss": "false3.2.7"
+  }
+}

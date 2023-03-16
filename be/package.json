@@ -1,0 +1,47 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/yup": "false0.32.0",
+    "bcrypt": "false5.1.0",
+    "cloudinary": "false1.35.0",
+    "cookie-parser": "false1.4.6",
+    "cors": "false2.8.5",
+    "dotenv": "false16.0.3",
+    "express": "false4.18.2",
+    "jsonwebtoken": "false9.0.0",
+    "mongoose": "false6.9.1",
+    "morgan": "false1.10.0",
+    "multer": "false1.4.5-lts.1",
+    "multer-storage-cloudinary": "false4.0.0",
+    "passport": "false0.6.0",
+    "passport-jwt": "false4.0.1",
+    "slugify": "false1.6.5",
+    "yup": "false1.0.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "false5.0.0",
+    "@types/cookie-parser": "false1.4.3",
+    "@types/cors": "false2.8.13",
+    "@types/dotenv": "false8.2.0",
+    "@types/express": "false4.17.17",
+    "@types/jsonwebtoken": "false9.0.1",
+    "@types/mongoose": "false5.11.97",
+    "@types/morgan": "false1.9.4",
+    "@types/multer": "false1.4.7",
+    "@types/node": "false18.13.0",
+    "@types/passport": "false1.0.11",
+    "@types/passport-jwt": "false3.0.8",
+    "autoprefixer": "false10.4.13",
+    "postcss": "false8.4.21",
+    "ts-node-dev": "false2.0.0",
+    "typescript": "false4.9.5"
+  }
+}
