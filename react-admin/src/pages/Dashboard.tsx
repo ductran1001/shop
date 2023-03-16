@@ -6,7 +6,7 @@ export const Dashboard = () => {
 
     return (
         <>
-            {user ? (
+            {!user ? (
                 <div className="overlay z-[99] opacity-30">
                     <div className="overlay__inner">
                         <div className="overlay__content">
